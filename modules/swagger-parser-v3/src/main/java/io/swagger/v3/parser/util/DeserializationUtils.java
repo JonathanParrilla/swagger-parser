@@ -14,7 +14,8 @@ public class DeserializationUtils
     {
         JsonNode result;
 
-        try {
+        try 
+        {
             if (isJson(contents)) 
             {
                 result = Json.mapper().readTree(contents);
