@@ -12,3 +12,5 @@ public interface SwaggerParserExtension
 
     SwaggerParseResult readContents(String swaggerAsString, List<AuthorizationValue> auth, ParseOptions options);
 }
+
+// OpenAPIV3Parser.java implements this interface.
