@@ -3,15 +3,18 @@ package io.swagger.v3.parser.core.models;
 import io.swagger.v3.oas.models.OpenAPI;
 import java.util.List;
 
-public class SwaggerParseResult {
+public class SwaggerParseResult 
+{
     private List<String> messages = null;
     private OpenAPI openAPI;
 
-    public SwaggerParseResult messages(List<String> messages) {
+    public SwaggerParseResult messages(List<String> messages) 
+    {
         this.messages = messages;
         return this;
     }
 
+    // Getter and Setter for Messages
     public List<String> getMessages() {
         return messages;
     }
@@ -20,11 +23,14 @@ public class SwaggerParseResult {
         this.messages = messages;
     }
 
-    public OpenAPI getOpenAPI() {
+    // Getter and Setter for OpenAPI
+    public OpenAPI getOpenAPI() 
+    {
         return openAPI;
     }
 
-    public void setOpenAPI(OpenAPI openAPI) {
+    public void setOpenAPI(OpenAPI openAPI) 
+    {
         this.openAPI = openAPI;
     }
 }
